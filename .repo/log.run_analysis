@@ -1,0 +1,46 @@
+Executing: run_analysis.sh from ./run_analysis.sh
+PDF_out_BORC.dat
+PDF_out_CortinaTrail.dat
+PDF_out_DXT55.dat
+PDF_out_GardaTrentino.dat
+PDF_out_PorteDiPietra.dat
+PDF_out_S1Trail.dat
+PDF_out_TrailEroi.dat
+PDF_out_UTLO.dat
+PDF_out_UltraBericus.dat
+BORC
+ Variable IFILE updated to input_BORC.in
+ Variable OFILE updated to out_BORC.dat
+there are      172 lines in +input_BORC.in
+DXT55
+ Variable IFILE updated to input_DXT55.in
+ Variable OFILE updated to out_DXT55.dat
+there are      204 lines in +input_DXT55.in
+PorteDiPietra
+ Variable IFILE updated to input_PorteDiPietra.in
+ Variable OFILE updated to out_PorteDiPietra.dat
+there are      240 lines in +input_PorteDiPietra.in
+TrailEroi
+ Variable IFILE updated to input_TrailEroi.in
+ Variable OFILE updated to out_TrailEroi.dat
+there are       82 lines in +input_TrailEroi.in
+UltraBericus
+ Variable IFILE updated to input_UltraBericus.in
+ Variable OFILE updated to out_UltraBericus.dat
+there are      555 lines in +input_UltraBericus.in
+CortinaTrail
+ Variable IFILE updated to input_CortinaTrail.in
+ Variable OFILE updated to out_CortinaTrail.dat
+there are     1041 lines in +input_CortinaTrail.in
+GardaTrentino
+ Variable IFILE updated to input_GardaTrentino.in
+ Variable OFILE updated to out_GardaTrentino.dat
+there are      371 lines in +input_GardaTrentino.in
+S1Trail
+ Variable IFILE updated to input_S1Trail.in
+ Variable OFILE updated to out_S1Trail.dat
+there are      246 lines in +input_S1Trail.in
+UTLO
+ Variable IFILE updated to input_UTLO.in
+ Variable OFILE updated to out_UTLO.dat
+there are      530 lines in +input_UTLO.in

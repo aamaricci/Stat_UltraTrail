@@ -220,8 +220,8 @@ for i in range(len(db[-1])):
 
 cols_list=["Rank", "Performance", "Name", "Club", "Nat.", "Birth Year", "M/F", "Rank M/F", "Cat", "Cat. Rank", "Avg.Speed km/", "Adj. Performance"]
 
-new_cols_list=["Rank", "Performance", "Nat.", "Birth Year", "M/F", "Rank M/F", "Cat", "Cat. Rank", "Avg.Speed km/"]
-for link in links[:1]:
+new_cols_list=["Rank", "Performance", "Nat.", "Birth Year", "M/F", "Avg.Speed km/"]
+for link in links:#[:5]:
     url = 'https://statistik.d-u-v.org/getresultevent.php?event='+str(link)
     table=pd.read_html(url)
     df = table[-1]
@@ -246,5 +246,7 @@ for link in links[:1]:
     if os.path.isfile('try.csv'):
         os.remove('try.csv')
     t.close()    
+    df = df.dropna()
+    df = df.astype({"Birth Year":int,"Avg.Speed km/":float})
     df.to_csv("input_"+str(NAME)+".csv", header=False, index=False, sep=' ', columns=new_cols_list)
         

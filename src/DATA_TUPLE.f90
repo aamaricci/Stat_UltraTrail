@@ -2,14 +2,12 @@ module DATA_TUPLE
   implicit none
 
   type tuple
+     integer             :: index=0
      integer             :: rank
      real(8)             :: time
      character(len=3)    :: nat
-     integer             :: yob
+     integer             :: age
      character(len=1)    :: mf
-     integer             :: rankMF
-     character(len=3)    :: cat
-     integer             :: rankCat     
      real(8)             :: speed
      type(tuple),pointer :: next   =>null()
    contains
@@ -28,6 +26,13 @@ module DATA_TUPLE
   end interface assignment(=)
 
 
+
+  interface append
+     module procedure :: append_I
+     module procedure :: append_D
+     module procedure :: append_C
+  end interface append
+
   public :: tuple
   public :: assignment(=)
   public :: get_time
@@ -43,12 +48,11 @@ contains
     self%rank    = 0
     self%time    = 0d0
     self%nat     = 'XXX'
-    self%yob     = 0
+    self%age     = 0
     self%mf      = ''
-    self%rankMF  = 0
-    self%cat     = ''
-    self%rankCat = 0     
     self%speed   = 0d0
+    !
+    self%index   = 0
     self%next    => null()
   end subroutine free_tuple
 
@@ -60,18 +64,24 @@ contains
     class(tuple),intent(inout) :: self
     integer                    :: unit
     character(len=10)          :: time
+    real(8)                    :: yob
+    integer                    :: year
+    integer                    :: values(8)
+    character(len=10)          :: b(3)
+    call date_and_time(b(1),b(2),b(3),values)
+    year = values(1)
     read(unit,*)       &
          self%rank,    &
-         time,    &
+         time,         &
          self%nat,     &
-         self%yob,     &
+         yob,          &
          self%mf,      &
-         self%rankMF,  &
-         self%cat,     &
-         self%rankCat, &
          self%speed
     self%time=get_time(time)
-    self%next => null()
+    self%age = year - int(yob)
+    !
+    self%index = 0
+    self%next  => null()
   end subroutine read_tuple
 
 
@@ -80,15 +90,12 @@ contains
   !       CONSTRUCT TVECTOR FROM ARRAY 
   !##################################################################
   !##################################################################
-  function construct_tuple_data(rank,time,nat,yob,mf,rankMF,cat,rankCat,speed) result(self)
+  function construct_tuple_data(rank,time,nat,age,mf,speed) result(self)
     integer                            :: rank
     character(len=*)                   :: time
     character(len=3)                   :: nat
-    integer                            :: yob
+    integer                            :: age
     character(len=1)                   :: mf
-    integer                            :: rankMF
-    character(len=3)                   :: cat
-    integer                            :: rankCat     
     real(8)                            :: speed
     type(tuple),target                 :: self
     !
@@ -97,12 +104,11 @@ contains
     self%rank    = rank
     self%time    = get_time(time)
     self%nat     = nat
-    self%yob     = yob
+    self%age     = age
     self%mf      = mf
-    self%rankMF  = rankMF
-    self%cat     = cat
-    self%rankCat = rankCat     
     self%speed   = speed
+    !
+    self%index   = 0
     self%next    => null()
   end function construct_tuple_data
 
@@ -121,12 +127,10 @@ contains
     a%rank    = b%rank
     a%time    = b%time
     a%nat     = b%nat
-    a%yob     = b%yob
+    a%age     = b%age
     a%mf      = b%mf
-    a%rankMF  = b%rankMF
-    a%cat     = b%cat
-    a%rankCat = b%rankCat     
     a%speed   = b%speed
+    a%index   =  b%index
     a%next    => b%next
   end subroutine equality_tuple
 
@@ -143,16 +147,89 @@ contains
     write(*,"(I6,1X)",advance='no')self%rank
     write(*,"(F18.2,1X)",advance='no')self%time
     write(*,"(A6,1X)",advance='no')self%nat
-    write(*,"(I6,1X)",advance='no')self%yob
+    write(*,"(I6,1X)",advance='no')self%age
     write(*,"(A6,1X)",advance='no')self%mf
-    write(*,"(I6,1X)",advance='no')self%rankMF
-    write(*,"(A6,1X)",advance='no')self%cat
-    write(*,"(I6,1X)",advance='no')self%rankCat
     write(*,"(F6.2,1X)",advance='no')self%speed
     write(*,"(A1)",advance='no')"]"
     write(*,*)""
   end subroutine show_tuple
 
+
+
+
+  !##################################################################
+  !##################################################################
+  !              AUXILIARY COMPUTATIONAL ROUTINES
+  !##################################################################
+  !##################################################################
+  pure subroutine append_I(vec,val)
+    integer,dimension(:),allocatable,intent(inout) :: vec
+    integer,intent(in)                             :: val  
+    integer,dimension(:),allocatable               :: tmp
+    integer                                        :: n
+    !
+    if (allocated(vec)) then
+       n = size(vec)
+       allocate(tmp(n+1))
+       tmp(:n) = vec
+       call move_alloc(tmp,vec)
+       n = n + 1
+    else
+       n = 1
+       allocate(vec(n))
+    end if
+    !
+    !Put val as last entry:
+    vec(n) = val
+    !
+    if(allocated(tmp))deallocate(tmp)
+  end subroutine append_I
+
+  pure subroutine append_D(vec,val)
+    real(8),dimension(:),allocatable,intent(inout) :: vec
+    real(8),intent(in)                             :: val  
+    real(8),dimension(:),allocatable               :: tmp
+    integer                                        :: n
+    !
+    if (allocated(vec)) then
+       n = size(vec)
+       allocate(tmp(n+1))
+       tmp(:n) = vec
+       call move_alloc(tmp,vec)
+       n = n + 1
+    else
+       n = 1
+       allocate(vec(n))
+    end if
+    !
+    !Put val as last entry:
+    vec(n) = val
+    !
+    if(allocated(tmp))deallocate(tmp)
+  end subroutine append_D
+
+  pure subroutine append_C(vec,val)
+    complex(8),dimension(:),allocatable,intent(inout) :: vec
+    complex(8),intent(in)                             :: val  
+    complex(8),dimension(:),allocatable               :: tmp
+    integer                                        :: n
+    !
+    if (allocated(vec)) then
+       n = size(vec)
+       allocate(tmp(n+1))
+       tmp(:n) = vec
+       call move_alloc(tmp,vec)
+       n = n + 1
+    else
+       n = 1
+       allocate(vec(n))
+    end if
+    !
+    !Put val as last entry:
+    vec(n) = val
+    !
+    if(allocated(tmp))deallocate(tmp)
+  end subroutine append_C
 
 
   function get_time(time) result(t)
@@ -172,5 +249,8 @@ contains
     integer          :: int
     read(str,*)  int
   end function str2int
+
+
+
 
 end module DATA_TUPLE

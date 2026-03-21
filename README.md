@@ -1,9 +1,7 @@
 # Stat UltraTrail	
 *beta version*  
 
-This is a simple software to perform statistical analysis of UltraTrail events. Data are retrieved from 
-[statistik.d-u-v.org](https://statistik.d-u-v.org). 
- 
+This is a simple software to perform statistical analysis of UltraTrail events. Data are retrieved from [statistik.d-u-v.org](https://statistik.d-u-v.org).  
 
 ### Dependencies
 The code is based on:  

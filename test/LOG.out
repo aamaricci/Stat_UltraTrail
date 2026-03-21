@@ -1,0 +1,280 @@
+there are       94 lines in +list.race
+ reading: Valle_dei_Segni_Wine_Trail_ITA
+there are      177 lines in +../data/input_Valle_dei_Segni_Wine_Trail_ITA.csv
+ reading: Piglione_trail_ITA
+there are       28 lines in +../data/input_Piglione_trail_ITA.csv
+ reading: 13__Ultra_Trail_Lago_d_Orta_UTLO_55_Km_ITA
+there are      332 lines in +../data/input_13__Ultra_Trail_Lago_d_Orta_UTLO_55_Km_ITA.csv
+ reading: 8__Ecomaratona_del_CollioBrda_ITA
+there are       62 lines in +../data/input_8__Ecomaratona_del_CollioBrda_ITA.csv
+ reading: 6_Valdambra_Ultra_Trail_ITA
+there are       65 lines in +../data/input_6_Valdambra_Ultra_Trail_ITA.csv
+ reading: 5__Borc_Trail_ITA
+there are       64 lines in +../data/input_5__Borc_Trail_ITA.csv
+ reading: Ultra_Sky_Supramonte_ITA
+there are       43 lines in +../data/input_Ultra_Sky_Supramonte_ITA.csv
+ reading: Trail_La_Scarpa_della_Valtrebbia_ITA
+there are       19 lines in +../data/input_Trail_La_Scarpa_della_Valtrebbia_ITA.csv
+ reading: Tartufo_Ultra_Skymarathon_ITA
+there are       20 lines in +../data/input_Tartufo_Ultra_Skymarathon_ITA.csv
+ reading: Baldo_Trail_Fest_ITA
+there are       75 lines in +../data/input_Baldo_Trail_Fest_ITA.csv
+ reading: Morenic_Trail_50_km_ITA
+there are       61 lines in +../data/input_Morenic_Trail_50_km_ITA.csv
+ reading: UTLM_Ultra_Trail_Lago_Maggiore_Brave_ITA
+there are       35 lines in +../data/input_UTLM_Ultra_Trail_Lago_Maggiore_Brave_ITA.csv
+ reading: 11_UTDM_-_Ultra_Trail_del_Moscato_ITA
+there are       62 lines in +../data/input_11_UTDM_-_Ultra_Trail_del_Moscato_ITA.csv
+ reading: 9_Trail_del_Montanaro_ITA
+there are       45 lines in +../data/input_9_Trail_del_Montanaro_ITA.csv
+ reading: Ascoli_Xtreme_Trail_ITA
+there are       45 lines in +../data/input_Ascoli_Xtreme_Trail_ITA.csv
+ reading: Trail_del_Falterona_ITA
+there are       54 lines in +../data/input_Trail_del_Falterona_ITA.csv
+ reading: Ultratrail_della_Maiella_ITA
+there are       55 lines in +../data/input_Ultratrail_della_Maiella_ITA.csv
+ reading: 7__Dolomiti_di_Brenta_Trail_45km_ITA
+there are      400 lines in +../data/input_7__Dolomiti_di_Brenta_Trail_45km_ITA.csv
+ reading: 7__Dolomiti_di_Brenta_Trail_64km_ITA
+there are      179 lines in +../data/input_7__Dolomiti_di_Brenta_Trail_64km_ITA.csv
+ reading: 6__LegendRun45_ITA
+there are       83 lines in +../data/input_6__LegendRun45_ITA.csv
+ reading: Lessinia_Legend_Lux_ITA
+there are       49 lines in +../data/input_Lessinia_Legend_Lux_ITA.csv
+ reading: 9._Südtirol_Sky_Marathon_ITA
+there are      140 lines in +../data/input_9._Südtirol_Sky_Marathon_ITA.csv
+ reading: 9._Südtirol_Skyrace_63km_ITA
+there are      132 lines in +../data/input_9._Südtirol_Skyrace_63km_ITA.csv
+ reading: Verghereto_Trail_ITA
+there are       65 lines in +../data/input_Verghereto_Trail_ITA.csv
+ reading: UMF_Ultra_Marathon_Du_Fallere_ITA
+there are       85 lines in +../data/input_UMF_Ultra_Marathon_Du_Fallere_ITA.csv
+ reading: Valgrosina_Trail_ITA
+there are       95 lines in +../data/input_Valgrosina_Trail_ITA.csv
+ reading: 8__T60_-_Trail_del_Battaglione_ITA
+there are       40 lines in +../data/input_8__T60_-_Trail_del_Battaglione_ITA.csv
+ reading: 9_Royal_Ultra_Sky_Marathon_Gran_Paradiso_ITA
+there are      102 lines in +../data/input_9_Royal_Ultra_Sky_Marathon_Gran_Paradiso_ITA.csv
+ reading: Etna_Trail_64_km_ITA
+there are       51 lines in +../data/input_Etna_Trail_64_km_ITA.csv
+ reading: MEHT_Monterosa_Est_Himalayan_Trail_-_Epic_ITA
+there are       46 lines in +../data/input_MEHT_Monterosa_Est_Himalayan_Trail_-_Epic_ITA.csv
+ reading: Piancavallo_run_-_La_panoramica_delle_Malghe_ITA
+there are       45 lines in +../data/input_Piancavallo_run_-_La_panoramica_delle_Malghe_ITA.csv
+ reading: 1__Monviso_60k_ITA
+there are       70 lines in +../data/input_1__Monviso_60k_ITA.csv
+ reading: 9_Cima_Tauffi_Trail_ITA
+there are       84 lines in +../data/input_9_Cima_Tauffi_Trail_ITA.csv
+ reading: 2__Ultra_Trail_Cervino_Matterhorn_ITA
+there are      112 lines in +../data/input_2__Ultra_Trail_Cervino_Matterhorn_ITA.csv
+ reading: 3__Gran_Trail_Corno_Grande_-_GTCG_ITA
+there are       78 lines in +../data/input_3__Gran_Trail_Corno_Grande_-_GTCG_ITA.csv
+ reading: K42_terminillo_ITA
+there are       31 lines in +../data/input_K42_terminillo_ITA.csv
+ reading: Trail_dei_Nebrodi_ITA
+there are       17 lines in +../data/input_Trail_dei_Nebrodi_ITA.csv
+ reading: Rosengarten_Schlern_Sky_Marathon_ITA
+there are      217 lines in +../data/input_Rosengarten_Schlern_Sky_Marathon_ITA.csv
+ reading: 6._BUT_Val_Formazza_-_Bettelmatt_Trail_ITA
+there are       65 lines in +../data/input_6._BUT_Val_Formazza_-_Bettelmatt_Trail_ITA.csv
+ reading: 9._Strafexpedition_ITA
+there are       82 lines in +../data/input_9._Strafexpedition_ITA.csv
+ reading: Monterosa_Walser_Waeg_45_km_ITA
+there are       75 lines in +../data/input_Monterosa_Walser_Waeg_45_km_ITA.csv
+ reading: 5__DoppiaW_Ultra_70_ITA
+there are       74 lines in +../data/input_5__DoppiaW_Ultra_70_ITA.csv
+ reading: Ultra_Sky_Marathon_d’Abruzzo_–_Serra_di_Celano_ITA
+there are       56 lines in +../data/input_Ultra_Sky_Marathon_d’Abruzzo_–_Serra_di_Celano_ITA.csv
+ reading: 11__Lavaredo_Ultra_Trail_by_UTMB_-_50K_ITA
+there are      815 lines in +../data/input_11__Lavaredo_Ultra_Trail_by_UTMB_-_50K_ITA.csv
+ reading: 12_Ultra_Trail_Oasi_Zegna_ITA
+there are       94 lines in +../data/input_12_Ultra_Trail_Oasi_Zegna_ITA.csv
+ reading: 10__Dolomiti_Extreme_Trail_55km_ITA
+there are      155 lines in +../data/input_10__Dolomiti_Extreme_Trail_55km_ITA.csv
+ reading: 3__Dolomiti_Extreme_Trail_72_km_ITA
+there are       95 lines in +../data/input_3__Dolomiti_Extreme_Trail_72_km_ITA.csv
+ reading: Chianti_Classico_Marathon_Ultra_Trail_ITA
+there are      138 lines in +../data/input_Chianti_Classico_Marathon_Ultra_Trail_ITA.csv
+ reading: Ultratrail_Lifoj_Picerno_UTLF_50_ITA
+there are       30 lines in +../data/input_Ultratrail_Lifoj_Picerno_UTLF_50_ITA.csv
+ reading: 7__UltraKtrail_70Km_ITA
+there are       71 lines in +../data/input_7__UltraKtrail_70Km_ITA.csv
+ reading: Alpe_Adria_Ultra_Trail_ITA
+there are        0 lines in +../data/input_Alpe_Adria_Ultra_Trail_ITA.csv
+ reading: Long_Trail_dei_Monti_Simbruini_ITA
+there are       94 lines in +../data/input_Long_Trail_dei_Monti_Simbruini_ITA.csv
+ reading: 13a_Trail_del_Monte_Soglio_-_Gir_Lung_ITA
+there are      220 lines in +../data/input_13a_Trail_del_Monte_Soglio_-_Gir_Lung_ITA.csv
+ reading: Vesuvio_Ultra_Marathon_ITA
+there are      102 lines in +../data/input_Vesuvio_Ultra_Marathon_ITA.csv
+ reading: Trail_3_Castelli_ITA
+there are       37 lines in +../data/input_Trail_3_Castelli_ITA.csv
+ reading: XI_Gran_Raid_-_GR70_ITA
+there are       55 lines in +../data/input_XI_Gran_Raid_-_GR70_ITA.csv
+ reading: XI_Gran_Raid_-_GR50_ITA
+there are       68 lines in +../data/input_XI_Gran_Raid_-_GR50_ITA.csv
+ reading: Cento_Croci_Trail_Ultramarathon_ITA
+there are       36 lines in +../data/input_Cento_Croci_Trail_Ultramarathon_ITA.csv
+ reading: 8__Garda_Trentino_Trail_GTT_ITA
+there are      409 lines in +../data/input_8__Garda_Trentino_Trail_GTT_ITA.csv
+ reading: Amalfi_Positano_UltraTrail_SkyRun_ITA
+there are       14 lines in +../data/input_Amalfi_Positano_UltraTrail_SkyRun_ITA.csv
+ reading: Vibram_Max...i_Trail_Mottarone_ITA
+there are      291 lines in +../data/input_Vibram_Max...i_Trail_Mottarone_ITA.csv
+ reading: Villacidro_Linas_Ultra_SkyMarathon_ITA
+there are       19 lines in +../data/input_Villacidro_Linas_Ultra_SkyMarathon_ITA.csv
+ reading: 3_Flaminia_Militare_Trail_ITA
+there are       63 lines in +../data/input_3_Flaminia_Militare_Trail_ITA.csv
+ reading: Crete_Senesi_Ultra_Marathon_ITA
+there are      114 lines in +../data/input_Crete_Senesi_Ultra_Marathon_ITA.csv
+ reading: Malcesine_Baldo_Trail_ITA
+there are      147 lines in +../data/input_Malcesine_Baldo_Trail_ITA.csv
+ reading: 8_Ultra_Trail_del_Mugello_ITA
+there are       67 lines in +../data/input_8_Ultra_Trail_del_Mugello_ITA.csv
+ reading: 7__Laives_Trail_ITA
+there are       54 lines in +../data/input_7__Laives_Trail_ITA.csv
+ reading: Ferriere_Trail_Festival_FCR_ITA
+there are       69 lines in +../data/input_Ferriere_Trail_Festival_FCR_ITA.csv
+ reading: Ultra_Trail_del_Monte_Catria_ITA
+there are       61 lines in +../data/input_Ultra_Trail_del_Monte_Catria_ITA.csv
+ reading: Duerocche_Scarpa_Ultra_Trail_ITA
+there are      117 lines in +../data/input_Duerocche_Scarpa_Ultra_Trail_ITA.csv
+ reading: Genova_Trail_ITA
+there are      190 lines in +../data/input_Genova_Trail_ITA.csv
+ reading: BVG_Trail_55km_ITA
+there are      129 lines in +../data/input_BVG_Trail_55km_ITA.csv
+ reading: 10._Tuscany_Crossing_TC53K_ITA
+there are        0 lines in +../data/input_10._Tuscany_Crossing_TC53K_ITA.csv
+ reading: 3_Santi_Trail_-_L_eremitica_ITA
+there are      139 lines in +../data/input_3_Santi_Trail_-_L_eremitica_ITA.csv
+ reading: Dolomiti_Beer_Trail_ITA
+there are      209 lines in +../data/input_Dolomiti_Beer_Trail_ITA.csv
+ reading: Extra_Trail_del_Rubicone_ITA
+there are       38 lines in +../data/input_Extra_Trail_del_Rubicone_ITA.csv
+ reading: The_Abbots_Way_Ultrashot_60k_ITA
+there are       37 lines in +../data/input_The_Abbots_Way_Ultrashot_60k_ITA.csv
+ reading: Ultra_Trail_di_Casola_Valsenio_ITA
+there are       35 lines in +../data/input_Ultra_Trail_di_Casola_Valsenio_ITA.csv
+ reading: 6_Maremontana_Trail_60_km_ITA
+there are      135 lines in +../data/input_6_Maremontana_Trail_60_km_ITA.csv
+ reading: 6_SciaccheTrail_ITA
+there are      155 lines in +../data/input_6_SciaccheTrail_ITA.csv
+ reading: 5__Chianti_Ultra_Trail_ITA
+there are      137 lines in +../data/input_5__Chianti_Ultra_Trail_ITA.csv
+ reading: Trail_del_Marganai_ITA
+there are       70 lines in +../data/input_Trail_del_Marganai_ITA.csv
+ reading: Trail_Val_di_Bisenzio_ITA
+there are       52 lines in +../data/input_Trail_Val_di_Bisenzio_ITA.csv
+ reading: 12__Ultrabericus_Trail_ITA
+there are      605 lines in +../data/input_12__Ultrabericus_Trail_ITA.csv
+ reading: Campo_dei_Fiori_Trail_50km_ITA
+there are      307 lines in +../data/input_Campo_dei_Fiori_Trail_50km_ITA.csv
+ reading: 2__Ultra_Trail_del_Marchesato_ITA
+there are      116 lines in +../data/input_2__Ultra_Trail_del_Marchesato_ITA.csv
+ reading: Sanremo_Ultra_Trail_SUT_ITA
+there are        0 lines in +../data/input_Sanremo_Ultra_Trail_SUT_ITA.csv
+ reading: Andersen_Trail_ITA
+there are      279 lines in +../data/input_Andersen_Trail_ITA.csv
+ reading: Brunello_Crossing_ITA
+there are      217 lines in +../data/input_Brunello_Crossing_ITA.csv
+ reading: Valmaremola_Ultra_Trail_ed.0_ITA
+there are      111 lines in +../data/input_Valmaremola_Ultra_Trail_ed.0_ITA.csv
+ reading: Ronda_Ghibellina_ITA
+there are      319 lines in +../data/input_Ronda_Ghibellina_ITA.csv
+ reading: 7__Winter_Trail_Monte_Prealba_-_Hard_ITA
+there are       38 lines in +../data/input_7__Winter_Trail_Monte_Prealba_-_Hard_ITA.csv
+ reading: Winter_Trail_Monte_Prealba_-_Ultra_ITA
+there are       29 lines in +../data/input_Winter_Trail_Monte_Prealba_-_Ultra_ITA.csv
+ reading: S1_Trail_La_Corsa_della_Bora_ITA
+there are      156 lines in +../data/input_S1_Trail_La_Corsa_della_Bora_ITA.csv
+ Processing: Valle_dei_Segni_Wine_Trail_ITA
+ Processing: Piglione_trail_ITA
+ Processing: 13__Ultra_Trail_Lago_d_Orta_UTLO_55_Km_ITA
+ Processing: 8__Ecomaratona_del_CollioBrda_ITA
+ Processing: 6_Valdambra_Ultra_Trail_ITA
+ Processing: 5__Borc_Trail_ITA
+ Processing: Ultra_Sky_Supramonte_ITA
+ Processing: Trail_La_Scarpa_della_Valtrebbia_ITA
+ Processing: Tartufo_Ultra_Skymarathon_ITA
+ Processing: Baldo_Trail_Fest_ITA
+ Processing: Morenic_Trail_50_km_ITA
+ Processing: UTLM_Ultra_Trail_Lago_Maggiore_Brave_ITA
+ Processing: 11_UTDM_-_Ultra_Trail_del_Moscato_ITA
+ Processing: 9_Trail_del_Montanaro_ITA
+ Processing: Ascoli_Xtreme_Trail_ITA
+ Processing: Trail_del_Falterona_ITA
+ Processing: Ultratrail_della_Maiella_ITA
+ Processing: 7__Dolomiti_di_Brenta_Trail_45km_ITA
+ Processing: 7__Dolomiti_di_Brenta_Trail_64km_ITA
+ Processing: 6__LegendRun45_ITA
+ Processing: Lessinia_Legend_Lux_ITA
+ Processing: 9._Südtirol_Sky_Marathon_ITA
+ Processing: 9._Südtirol_Skyrace_63km_ITA
+ Processing: Verghereto_Trail_ITA
+ Processing: UMF_Ultra_Marathon_Du_Fallere_ITA
+ Processing: Valgrosina_Trail_ITA
+ Processing: 8__T60_-_Trail_del_Battaglione_ITA
+ Processing: 9_Royal_Ultra_Sky_Marathon_Gran_Paradiso_ITA
+ Processing: Etna_Trail_64_km_ITA
+ Processing: MEHT_Monterosa_Est_Himalayan_Trail_-_Epic_ITA
+ Processing: Piancavallo_run_-_La_panoramica_delle_Malghe_ITA
+ Processing: 1__Monviso_60k_ITA
+ Processing: 9_Cima_Tauffi_Trail_ITA
+ Processing: 2__Ultra_Trail_Cervino_Matterhorn_ITA
+ Processing: 3__Gran_Trail_Corno_Grande_-_GTCG_ITA
+ Processing: K42_terminillo_ITA
+ Processing: Trail_dei_Nebrodi_ITA
+ Processing: Rosengarten_Schlern_Sky_Marathon_ITA
+ Processing: 6._BUT_Val_Formazza_-_Bettelmatt_Trail_ITA
+ Processing: 9._Strafexpedition_ITA
+ Processing: Monterosa_Walser_Waeg_45_km_ITA
+ Processing: 5__DoppiaW_Ultra_70_ITA
+ Processing: Ultra_Sky_Marathon_d’Abruzzo_–_Serra_di_Celano_ITA
+ Processing: 11__Lavaredo_Ultra_Trail_by_UTMB_-_50K_ITA
+ Processing: 12_Ultra_Trail_Oasi_Zegna_ITA
+ Processing: 10__Dolomiti_Extreme_Trail_55km_ITA
+ Processing: 3__Dolomiti_Extreme_Trail_72_km_ITA
+ Processing: Chianti_Classico_Marathon_Ultra_Trail_ITA
+ Processing: Ultratrail_Lifoj_Picerno_UTLF_50_ITA
+ Processing: 7__UltraKtrail_70Km_ITA
+ Processing: Long_Trail_dei_Monti_Simbruini_ITA
+ Processing: 13a_Trail_del_Monte_Soglio_-_Gir_Lung_ITA
+ Processing: Vesuvio_Ultra_Marathon_ITA
+ Processing: Trail_3_Castelli_ITA
+ Processing: XI_Gran_Raid_-_GR70_ITA
+ Processing: XI_Gran_Raid_-_GR50_ITA
+ Processing: Cento_Croci_Trail_Ultramarathon_ITA
+ Processing: 8__Garda_Trentino_Trail_GTT_ITA
+ Processing: Amalfi_Positano_UltraTrail_SkyRun_ITA
+ Processing: Vibram_Max...i_Trail_Mottarone_ITA
+ Processing: Villacidro_Linas_Ultra_SkyMarathon_ITA
+ Processing: 3_Flaminia_Militare_Trail_ITA
+ Processing: Crete_Senesi_Ultra_Marathon_ITA
+ Processing: Malcesine_Baldo_Trail_ITA
+ Processing: 8_Ultra_Trail_del_Mugello_ITA
+ Processing: 7__Laives_Trail_ITA
+ Processing: Ferriere_Trail_Festival_FCR_ITA
+ Processing: Ultra_Trail_del_Monte_Catria_ITA
+ Processing: Duerocche_Scarpa_Ultra_Trail_ITA
+ Processing: Genova_Trail_ITA
+ Processing: BVG_Trail_55km_ITA
+ Processing: 3_Santi_Trail_-_L_eremitica_ITA
+ Processing: Dolomiti_Beer_Trail_ITA
+ Processing: Extra_Trail_del_Rubicone_ITA
+ Processing: The_Abbots_Way_Ultrashot_60k_ITA
+ Processing: Ultra_Trail_di_Casola_Valsenio_ITA
+ Processing: 6_Maremontana_Trail_60_km_ITA
+ Processing: 6_SciaccheTrail_ITA
+ Processing: 5__Chianti_Ultra_Trail_ITA
+ Processing: Trail_del_Marganai_ITA
+ Processing: Trail_Val_di_Bisenzio_ITA
+ Processing: 12__Ultrabericus_Trail_ITA
+ Processing: Campo_dei_Fiori_Trail_50km_ITA
+ Processing: 2__Ultra_Trail_del_Marchesato_ITA
+ Processing: Andersen_Trail_ITA
+ Processing: Brunello_Crossing_ITA
+ Processing: Valmaremola_Ultra_Trail_ed.0_ITA
+ Processing: Ronda_Ghibellina_ITA
+ Processing: 7__Winter_Trail_Monte_Prealba_-_Hard_ITA
+ Processing: Winter_Trail_Monte_Prealba_-_Ultra_ITA
+ Processing: S1_Trail_La_Corsa_della_Bora_ITA
