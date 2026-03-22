@@ -5,7 +5,7 @@ import sys, os, shutil, csv
 
 # all   = all
 # 2023  -> 1960
-YEAR=2023
+YEAR=2022
 
 
 
@@ -218,15 +218,20 @@ for i in range(len(db[-1])):
     if name!='None':
         links.append(name.split("=")[-1])
 
-cols_list=["Rank", "Performance", "Name", "Club", "Nat.", "Birth Year", "M/F", "Rank M/F", "Cat", "Cat. Rank", "Avg.Speed km/", "Adj. Performance"]
+cols_list=["Rank", "Performance", "Name", "Club", "Nat.", "Birth Year", "M/F", "Rank M/F", "Cat", "Cat. Rank", "Avg.Speed km/h", "Adj. Performance"]
 
-new_cols_list=["Rank", "Performance", "Nat.", "Birth Year", "M/F", "Avg.Speed km/"]
+new_cols_list=["Rank", "Performance", "Nat.", "Birth Year", "M/F", "Avg.Speed km/h"]
+
+# =========================
+# LOOP OVER EVENTS
+# =========================
 for link in links:#[:5]:
     url = 'https://statistik.d-u-v.org/getresultevent.php?event='+str(link)
     table=pd.read_html(url)
+
     df = table[-1]
     
-    #NAME OF THE EVENT:
+    #NAME OF THE EVENT CLEANING:
     chars_1=[" ","'", "^"]
     chars_2=[';', ':', '!', "*","(",")","°"]
     NAME=str(table[-3].values[1][1])
@@ -237,16 +242,56 @@ for link in links:#[:5]:
     flist.write(NAME+"\n")
     print(NAME)
     
-    t = open("try.csv", "w")
-    df.to_csv("tmp.csv", header=False, index=False, sep=';')
-    subprocess.call(["sed", 's/ h//g', "tmp.csv"], stdout=t)
-    if os.path.isfile('tmp.csv'):
-        os.remove('tmp.csv')
-    df = pd.read_csv("try.csv",names=cols_list,sep=';')
-    if os.path.isfile('try.csv'):
-        os.remove('try.csv')
-    t.close()    
-    df = df.dropna()
-    df = df.astype({"Birth Year":int,"Avg.Speed km/":float})
-    df.to_csv("input_"+str(NAME)+".csv", header=False, index=False, sep=' ', columns=new_cols_list)
-        
+    # t = open("try.csv", "w")
+    # df.to_csv("tmp.csv", header=False, index=False, sep=';')
+    # subprocess.call(["sed", 's/ h//g', "tmp.csv"], stdout=t)
+    # if os.path.isfile('tmp.csv'):
+    #     os.remove('tmp.csv')
+    # df = pd.read_csv("try.csv",names=cols_list,sep=';')
+    # if os.path.isfile('try.csv'):
+    #     os.remove('try.csv')
+    # t.close()   
+    # ---- ASSIGN COLUMN NAMES DIRECTLY ----
+    if len(df.columns) == len(cols_list):
+        df.columns = cols_list
+    else:
+        # fallback if unexpected format
+        df = df.iloc[:, :len(cols_list)]
+        df.columns = cols_list
+
+    # df.to_csv("tmp.csv", header=False, index=False, sep=';')  
+    # df = pd.read_csv("tmp.csv", names=cols_list, sep=';')
+    # os.remove("tmp.csv")
+
+    # ---- CLEAN DATA ----    
+    df = df.dropna().copy()
+
+    # Remove " h"
+    df.loc[:, "Performance"] = df["Performance"].astype(str).str.replace(" h", "", regex=False)
+
+    # Convert types safely
+    df.loc[:, "Birth Year"] = pd.to_numeric(df["Birth Year"], errors="coerce")
+    df.loc[:, "Avg.Speed km/h"] = pd.to_numeric(df["Avg.Speed km/h"], errors="coerce")
+
+    # Drop rows where conversion failed
+    df = df.dropna(subset=["Birth Year", "Avg.Speed km/h"]).copy()
+
+    df.loc[:, "Birth Year"] = df["Birth Year"].astype(int)
+
+    # Time to seconds
+    df.loc[:, "Performance_sec"] = pd.to_timedelta(
+        df["Performance"], errors="coerce"
+    ).dt.total_seconds()
+
+    # ---- SELECT COLUMNS ----
+    df = df[new_cols_list + ["Performance_sec"]]
+
+    # ---- WRITE OUTPUT ----
+    df.to_csv(
+        "input_" + str(NAME) + ".csv",
+        header=True,
+        index=False,
+        sep=' '
+    )
+
+flist.close()

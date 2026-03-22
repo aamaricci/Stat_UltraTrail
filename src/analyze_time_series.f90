@@ -45,7 +45,7 @@ program analysis
      t0    = ydata(1)
      open(free_unit(ounit),file="output_"//str(event)//".dat")
      do i=1,size(tlist(irace))
-        write(ounit,*)i/dble(size(tlist(irace))),ydata(i)-t0,sdata(i),ydata(i)
+        write(ounit,*)i/dble(size(tlist(irace))),ydata(i)/t0,ydata(i)-t0,sdata(i),ydata(i)
      enddo
      close(ounit)
 
